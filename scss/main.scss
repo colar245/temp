@@ -1,0 +1,34 @@
+@import "libs/fonts";
+/* 
+ * # normalize.css
+ * normalize.css v5.0.0 | MIT License | 
+ * github.com/necolas/normalize.css 
+ *
+ */
+ @import "libs/normalize";
+
+ /* 
+ * # typography & general theme styles
+ * 
+ */
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    position: absolute;
+    width: 401px;
+    height: 88px;
+    left: 520px;
+    top: 53px;
+    
+    font-family: 'Alfa Slab One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #E17055;
+}
