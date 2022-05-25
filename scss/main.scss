@@ -12,28 +12,46 @@
  */
  @import "../node_modules/bootstrap/scss/bootstrap";
 
+ /*
+ * Vars
+ */
+ @import "libs/vars";
+
  /* 
  * # typography & general theme styles
  * 
  */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    position: absolute;
-    width: 401px;
-    height: 88px;
-    left: 520px;
-    top: 53px;
     
-    font-family: 'Alfa Slab One';
+    font-family: 'Alfa Slab One', cursive;
     font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 88px;
-    /* identical to box height */
-    
-    display: flex;
     align-items: center;
     text-align: center;
     
-    color: #E17055;
+    color: $color-title;
+}
+
+body {
+    background-color: #1F303C;
+    color: antiquewhite;
+}
+
+.hero {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+.about {
+    margin-bottom: 4em;
+}
+.section {
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    a {
+        text-decoration: none;
+    }
+    h2 {
+        margin-top: 10vh;
+    }
 }
