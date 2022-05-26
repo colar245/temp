@@ -35,6 +35,13 @@ h1, h2, h3, h4, h5, h6,
 body {
     background-color: $color-bg;
     color: antiquewhite;
+    min-height: 100vh;
+    h1 {
+        filter: drop-shadow(0 20px 10px #000);
+    }
+    h2 {
+        filter: drop-shadow(0px 5px 2px #000);
+    }
 }
 
 .hero {
@@ -48,7 +55,8 @@ body {
     padding-top: 20%;
     align-items: center;
     text-align: center;
-    min-height: 60vh;
+    // min-height: 60vh;
+    margin-bottom: 10em;
     a {
         text-decoration: none;
     }
@@ -59,5 +67,86 @@ body {
     }
     h2:hover {
         color: $color-title-d;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    // background: #3586ff;
+    background: $color-title;
+    min-height: 5vh;
+    padding: 20px 50px;
+    .wave {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: url(/assets/img/wave2.png);
+        background-size: 1000px 50px;
+    }
+    .wave#wave1 {
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4000ms linear infinite;
+    }
+    .wave#wave2 {
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4000ms linear infinite;
+    }
+    .wave#wave3 {
+        z-index: 998;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3000ms linear infinite;
+    }
+    .wave#wave4 {
+        z-index: 997;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave2 3000ms linear infinite;
+    }
+    @keyframes animateWave {
+        0% {
+            background-position-x: 1000px;
+        }
+        100% {
+            background-position-x: 0px;
+        }
+    }
+    @keyframes animateWave2 {
+        0% {
+            background-position-x: 0px;
+        }
+        100% {
+            background-position-x: 1000px;
+        }
+    }
+    .social {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            img {
+                width: 2em;
+                height: 2em;
+                margin: 0 2em;
+                filter: invert(1);
+                display: inline-block;
+                transition: 500ms;
+            }
+            img:hover {
+                transform: translateY(-10px);
+                filter: invert(0);
+            }
+        }
     }
 }
