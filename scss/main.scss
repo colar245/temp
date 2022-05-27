@@ -46,17 +46,20 @@ body {
 
 .hero {
     margin-top: 2em;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 .about {
     margin-bottom: 4em;
+}
+.container, .container-sm {
+    margin-bottom: 150px;
 }
 .section {
     padding-top: 20%;
     align-items: center;
     text-align: center;
     // min-height: 60vh;
-    margin-bottom: 200px;
+    margin-bottom: 3em;
     a {
         text-decoration: none;
     }
@@ -77,6 +80,7 @@ footer {
     background: $color-title;
     min-height: 5vh;
     padding: 20px 50px;
+    margin-top: 50px;
     .wave {
         position: absolute;
         top: -50px;
